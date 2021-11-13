@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Microsoft Teams"
+        android:textColor="#3F51B5"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/micro"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="90dp"
+        android:src="@drawable/mcc"
+        ></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Get started with your work, school or personal Microsoft account"
+        android:textSize="17dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corner_shape"
+        android:gravity="center"
+        android:hint="Enter Email, Phone, or Skype" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign in"
+        android:backgroundTint="@color/purple_200"
+        android:layout_marginHorizontal="70dp"
+        ></Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Get help with signing in"
+        android:textSize="18dp" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        app:strokeColor="#888383"
+        app:strokeWidth="2dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Sign up for free"
+        android:textAllCaps="false"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconSize="25dp"
+        app:strokeColor="#888383"
+        app:strokeWidth="2dp"
+        app:icon="@drawable/microsoft"
+        />
+
+
+
+</LinearLayout>

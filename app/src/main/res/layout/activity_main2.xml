@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#FFEB3B">
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Something"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select one from All radioButtons"
+        android:textSize="25dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/edt"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/tv"
+        >
+        <RadioButton
+            android:id="@+id/pizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pizza"
+            android:layout_marginTop="15dp"/>
+
+        <RadioButton
+            android:id="@+id/burger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="burger"
+            android:layout_marginTop="15dp"/>
+
+        <RadioButton
+            android:id="@+id/sandwich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sandwich"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Out"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/out"/>
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Checkbox"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/pizza1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:text="Check/Uncheck" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_below="@+id/pizza1"/>
+
+</RelativeLayout>
